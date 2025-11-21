@@ -1,0 +1,26 @@
+{
+  "name": "catbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@discordjs/opus": "^0.10.0",
+    "@discordjs/rest": "^2.6.0",
+    "@discordjs/voice": "^0.17.0",
+    "@sapphire/shapeshift": "^4.0.0",
+    "discord-api-types": "^0.38.32",
+    "discord.js": "^14.24.2",
+    "dotenv": "^16.4.5",
+    "libsodium-wrappers": "^0.7.15",
+    "node-fetch": "^3.3.2",
+    "play-dl": "^1.9.7",
+    "sapphire": "^0.0.3",
+    "ytdl-core": "^4.11.5"
+  }
+}
