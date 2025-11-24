@@ -192,6 +192,8 @@ client.on("clientReady", () => {
   })();
 });
 
+// Eventually I'll separate this into multiple files for better organization,
+// but I didn't feel the need yet since it's just a music player and LoL checker for now
 const membersPlayingLoL = new Map();
 
 const players = new Map();
