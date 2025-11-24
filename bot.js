@@ -391,7 +391,7 @@ client.on("presenceUpdate", (oldPresence, newPresence) => {
 
   if (!newPresence.activities) return;
 
-  // Check if they are currently playing "League of Legends"
+  // Check if they are currently playing League of Legends
   const isPlayingLoL = newPresence.activities.some(
     (activity) => activity.name === "League of Legends"
   );
@@ -759,7 +759,7 @@ client.on("interactionCreate", async (interaction) => {
       })
       .join("\n");
 
-    // Check if the queue is longer than 2000 characters (Discord's message limit)
+    // Handle Discord's message limit
     if (queueList.length > 2000) {
       const shortenedList = queueList.slice(0, 1900) + "\n... (and more)";
       return interaction.reply(`Current Queue:\n${shortenedList}`);
