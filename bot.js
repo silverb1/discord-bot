@@ -173,6 +173,7 @@ client.on("clientReady", () => {
       console.log("Started refreshing application (/) commands.");
 
       // Register slash commands in every guild the bot is in
+      // I'll remove this if I send the bot to the public, but for now it's just in like 3 servers lol
       for (const [guildId, guild] of client.guilds.cache) {
         try {
           await rest.put(Routes.applicationGuildCommands(CLIENT_ID, guildId), {
